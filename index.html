@@ -16,19 +16,23 @@
   .ok { color:#00ff88; }
   .warn { color:#ffcc00; }
   .err { color:#ff4444; }
+  a { color:#6cf; text-decoration:none; }
+  a:hover { text-decoration:underline; }
 </style>
 </head>
 
 <body>
 
 <h1>STA – Stationslage</h1>
+
 <p>Stations‑Achse: N → STA → IS → OUT → OI → IO → IN</p>
+<p><a href="./time_3x11_scroll_zoom.html">Zeitmodul 3×11 öffnen</a></p>
 
 <div id="out" class="box">Bereit…</div>
 
 <script type="module">
 // ------------------------------------------------------
-// STA – eigene iki1uc Stationsdaten
+// STA – iki1uc Stationsdaten
 // ------------------------------------------------------
 const STA = {
   name: "STA",
@@ -50,7 +54,7 @@ const STA = {
 function renderSTA(){
   const out = document.getElementById("out");
 
-  const html = `
+  out.innerHTML = `
     <h2 class="ok">${STA.name}</h2>
     <p><b>Achse:</b> ${JSON.stringify(STA.axis)}</p>
     <p><b>Orbit:</b> ${STA.orbit}</p>
@@ -58,8 +62,6 @@ function renderSTA(){
     <p><b>RESPO:</b> ${JSON.stringify(STA.respo)}</p>
     <p><b>STAMP:</b> ${STA.stamp}</p>
   `;
-
-  out.innerHTML = html;
 }
 
 // ------------------------------------------------------
