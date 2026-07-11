@@ -1,23 +1,39 @@
-# iki1uc – ROOT
+# STA – Stations-Achse (iki1uc)
 
-## Zweck
-Dieses Repository bildet den Ursprung der gesamten Struktur.  
-Es stellt die öffentliche Identität des Systems bereit und dient  
-als Einstiegspunkt für alle Module, Achsen und Bereiche.
+STA ist die zweite Station im Stations-Orbit:
 
-## Identität
-- CORE: iki1uc  
-- VERSION: 1.0  
-- CODE: RAW  
-- LAGE: ROOT / Creator / NC  
-- STATUS: Online  
+N → STA → IS → OUT → OI → IO → IN
 
-## Inhalt
-- index.html – öffentliche Landing‑Page  
-- ID.html – Identitätsdarstellung  
-- visual/ – Visualisierungen  
-- modules/ – Verlinkte System‑Repos  
+STA ordnet die Systemlage, stabilisiert den Orbit und stellt die
+Stations-Informationen bereit, die für die Weiterleitung nach IS
+notwendig sind.
 
-## Hinweis
-Dieses Repository enthält keine Engine‑Mechanismen.  
-Es dient ausschließlich der öffentlichen Darstellung und Struktur.
+-----------------------------------------
+# FUNKTION
+
+STA erzeugt:
+- Stations-Lage
+- Achsen-Status
+- Orbit-Position
+- Response-Zustand
+- System-Stempel
+
+STA ist die Übergangs-Stufe zwischen N (Startpunkt)
+und IS (Informations-Stufe).
+
+-----------------------------------------
+# MODULE
+
+ID.html     – Identität der Station  
+index.html  – Stations-Lage-Interface  
+STA.js      – Stations-Daten (optional)
+
+-----------------------------------------
+# ORBIT
+
+N → STA → IS → OUT → OI → IO → IN → SYS-x → 2me → N
+
+-----------------------------------------
+# STATUS
+
+STA ist aktiv, eigenständig und vollständig iki1uc.
