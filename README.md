@@ -26,7 +26,7 @@ und IS (Informations-Stufe).
 
 ID.html     – Identität der Station  
 index.html  – Stations-Lage-Interface  
-STA.js      – Stations-Daten (optional)
+time_3x11_scroll_zoom.html – optionales Zeitmodul (3×11 Raster)
 
 -----------------------------------------
 # ORBIT
