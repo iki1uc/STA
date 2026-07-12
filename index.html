@@ -31,26 +31,9 @@
 <div id="out" class="box">Bereit…</div>
 
 <script type="module">
-// ------------------------------------------------------
-// STA – iki1uc Stationsdaten
-// ------------------------------------------------------
-const STA = {
-  name: "STA",
-  axis: { x: 1, y: 0, z: 0, th: 2 },
-  orbit: "N → STA → IS",
-  status: "OK",
-  respo: {
-    OK: "OK",
-    FLOW: "FLOW",
-    ECHO: "ECHO",
-    VOID: "VOID"
-  },
-  stamp: Date.now()
-};
+import { STA } from "./STA.kernel.js";
 
-// ------------------------------------------------------
 // Renderer
-// ------------------------------------------------------
 function renderSTA(){
   const out = document.getElementById("out");
 
@@ -64,9 +47,6 @@ function renderSTA(){
   `;
 }
 
-// ------------------------------------------------------
-// Start
-// ------------------------------------------------------
 renderSTA();
 </script>
 
